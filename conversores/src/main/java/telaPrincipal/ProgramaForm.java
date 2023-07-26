@@ -31,8 +31,14 @@ public class ProgramaForm extends JFrame {
         this.setResizable(true);
         this.setSize(800, 600);
 
-        this.getContentPane().add(getPnlUp());
-        this.getContentPane().add(getPnlDown());
+
+        this.setJMenuBar(criarMenu());
+
+
+        this.pnlUp = getPnlUp();
+        this.pnlDown = getPnlDown();
+        this.add(pnlUp, BorderLayout.NORTH);
+        this.add(pnlDown, BorderLayout.CENTER);
 
 
 
