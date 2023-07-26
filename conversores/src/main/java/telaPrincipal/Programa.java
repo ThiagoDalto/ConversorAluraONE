@@ -117,7 +117,15 @@ public class Programa extends ProgramaForm{
             }
         };
 
-        pnlDown.add(conversorMoedasForm);
+
+        JPanel pnlDown = getPnlDown();
+        pnlDown.removeAll();
+
+
+        pnlDown.add(conversorMoedasForm.getPnlForm(), BorderLayout.CENTER);
+        pnlDown.add(conversorMoedasForm.getPnlRodape(), BorderLayout.PAGE_END);
+
+
         pnlDown.revalidate();
         pnlDown.repaint();
 

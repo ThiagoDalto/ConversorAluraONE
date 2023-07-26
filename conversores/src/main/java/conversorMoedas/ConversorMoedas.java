@@ -27,7 +27,7 @@ public class ConversorMoedas extends ConversorMoedasForm{
     protected void btnConverterClick(ActionEvent ev) {
 
         String convertFrom = (Objects.requireNonNull(cbxMoeda1.getSelectedItem()).toString());
-        System.out.println(convertFrom);
+
         switch (convertFrom){
             case "Real":
                 convertFrom = "BRL";
@@ -48,12 +48,12 @@ public class ConversorMoedas extends ConversorMoedasForm{
                 convertFrom = "ARS";
                 break;
         }
-        System.out.println(convertFrom);
+
 
         String convertTo = (Objects.requireNonNull(cbxMoeda2.getSelectedItem()).toString());
 
 
-        System.out.println(convertTo);
+
 
         switch (convertTo){
             case "Real":
@@ -75,7 +75,7 @@ public class ConversorMoedas extends ConversorMoedasForm{
                 convertTo = "ARS";
                 break;
         }
-        System.out.println(convertTo);
+
         BigDecimal amount = toBigDecimal(txtMontantePConverter.getText());
 
 

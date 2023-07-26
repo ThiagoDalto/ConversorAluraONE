@@ -9,7 +9,7 @@ public abstract class ConversorMoedasForm extends JFrame {
 
 
 
-    private static final int TAMANHO_TXT =10;
+    private static final int TAMANHO_TXT =15;
     protected JPanel pnlForm;
 
     protected JPanel pnlRodape;
@@ -44,7 +44,6 @@ public abstract class ConversorMoedasForm extends JFrame {
         this.getPnlForm();
         this.getPnlRodape();
         this.setSize(600, 600);
-        this.setVisible(true);
 
         this.getContentPane().setBackground(new Color(123, 50, 250));
         this.getContentPane().add(getPnlForm(), BorderLayout.CENTER);

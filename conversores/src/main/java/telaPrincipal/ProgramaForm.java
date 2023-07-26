@@ -76,6 +76,9 @@ public class ProgramaForm extends JFrame {
             pnlDown = new JPanel();
             pnlDown.setBackground(Color.pink);
             pnlDown.setSize(800, 550);
+            pnlDown.setLayout(new BorderLayout());
+            pnlDown.setAlignmentX(FlowLayout.CENTER);
+            pnlDown.setAlignmentY(FlowLayout.CENTER);
 
 
 
