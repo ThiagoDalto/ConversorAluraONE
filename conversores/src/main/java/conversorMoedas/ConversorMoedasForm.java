@@ -66,14 +66,7 @@ public abstract class ConversorMoedasForm extends JFrame {
             pnlForm.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 
             String[] moedas = {"Real", "Dólar americano", "Euro", "Libra Esterlina", "Peso Argentino", "Peso Chileno"};
-            HashMap<String, String> moedaISO = new HashMap<String, String>();
 
-            moedaISO.put("Real", "BRL");
-            moedaISO.put("Peso Argentino", "ARS");
-            moedaISO.put("Peso Chileno", "CLP");
-            moedaISO.put("Libra Esterlina", "GBP");
-            moedaISO.put("Dólar americano", "USD");
-            moedaISO.put("Euro", "EUR");
 
             lblMoeda1 = new JLabel("Moeda de origem");
             cbxMoeda1 = new JComboBox<String>(moedas);
